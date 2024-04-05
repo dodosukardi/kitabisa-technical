@@ -47,7 +47,7 @@ const Home = () => {
   }
 
   return (
-    <div className="container block p-8 bg-gray-50 w-full h-full">
+    <div className="container xl:w-[1300px] block p-8 bg-gray-50 h-full">
       <Header />
       <div className="flex flex-row-reverse">
         <Dropdown
@@ -70,7 +70,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-4 py-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xs:grid-cols-1 gap-4 py-4">
         {isFetch ? (
           <>
             <CardSkeleton />
