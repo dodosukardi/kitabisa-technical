@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Kitabisa Technical Test project built with [Next.js](https://nextjs.org/)
 
-## Getting Started
+## Table of Contents
 
-First, run the development server:
+- [Setup](#setup)
+- [Folder Structure](#folder-structure)
+- [Testing](#testing)
+- [Scripts](#scripts)
+- [Author](#author)
 
+## Setup
+
+1. Install Depedencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run development server
+```bash
+npm run dev
+```
+3. Open project in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to http://localhost:3000 in your web browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br />
 
-## Learn More
+## Folder Structure
+```
+.
+├── src/
+│   ├── app/            # Main app contain layout and styling
+│   ├── pages/          # Directory for routings
+│   |     └── api/      # Directory for fetching external API
+│   ├── components/     # Directory for reusable component
+│   └── utils/          # Directory for helper functions
+├── package.json        # Node.js package file
+├── babel.config.js     # Babel config file
+├── jest.config.js      # Jest config file
+├── next.config.js      # Next config file
+├── tailwind.config.ts  # TailwindCSS config file
+├── postcss.config.js   # PostCSS config file
+├── .eslintrc.json      # Eslint config file
+├── .gitignore          # Gitignore file
+└── README.md           # Project README file
+```
 
-To learn more about Next.js, take a look at the following resources:
+<br />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Testing
+This project uses Jest for testing. You can run tests using the following command:
+```bash
+npm run test
+```
+Tests are located in some directories and follow the naming convention *.test.ts.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Scripts
 
-## Deploy on Vercel
+- `npm run dev`: Start the development server.
+- `npm run build`: Build the production application.
+- `npm run start`: Start the production server.
+- `npm run test`: Run tests using Jest.
+- `npm run lint`: Run linting checks.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
+Dodo Sukardi (Frontend Developer)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contact: dodosukardi@gmail.com
